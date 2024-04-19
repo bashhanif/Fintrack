@@ -12,16 +12,18 @@
     <div class="container">
         <div class="rectangle-container">
             <div class="name">Price of new vehicle</div>
-            <input type="text" class="rounded-rectangle " placeholder="e.g. 10000" style="font-family: 'Inter', sans-serif; font-size: 15px; color: #fff; padding-left: 20px; width: 150px; border: none;">
+            <input type="text" id="priceOfvehicle" class="rounded-rectangle " placeholder="e.g. 10000" style="font-family: 'Inter', sans-serif; font-size: 15px; color: #fff; padding-left: 20px; width: 150px; border: none;">
             
         </div>
         <div class="rectangle-container">
-            <div class="name">Value of trade-in</div>
-            <div class="rounded-rectangle"></div>
+            <div class="name">Down Payment</div>
+            <input type="text" id="downpayment" class="rounded-rectangle " placeholder="e.g. 10000" style="font-family: 'Inter', sans-serif; font-size: 15px; color: #fff; padding-left: 20px; width: 150px; border: none;">
+            
+
         </div>
         <div class="rectangle-container">
             <div class="name">Duration of loan</div>
-            <select class="rounded-rectangle" style="font-family: 'Inter' , sans-serif; font-size: 15px; color: #fff; padding-left: 20px;">
+            <select id="loanduration" class="rounded-rectangle" style="font-family: 'Inter' , sans-serif; font-size: 15px; color: #fff; padding-left: 20px;">
                 <option value="12"> 12 months</option>
                 <option value="24"> 24 months</option>
                 <option value="36">36 months</option>
@@ -32,7 +34,7 @@
         </div>
         <div class="rectangle-container">
             <div class="name">Loan payment Frequency</div>
-            <select class="rounded-rectangle" style="font-family: 'Inter' , sans-serif; font-size: 15px; color: #fff; padding-left: 20px;">
+            <select  id="paymentfrequency" class="rounded-rectangle" style="font-family: 'Inter' , sans-serif; font-size: 15px; color: #fff; padding-left: 20px;">
                 <option value="Weekly" style="margin-right: 10px;">Weekly</option>
                 <option value="Bi-weekly">Bi-weekly</option>
                 <option value="Monthly">Monthly</option>
@@ -42,16 +44,20 @@
         <div class="rectangle-container">
             <div class="name">Interest rate</div>
             
-            <input type="text" class="rounded-rectangle " placeholder ="e.g. 1.99" style="font-family: 'Inter', sans-serif; font-size: 15px; color: #fff; padding-left: 20px; width: 150px; border: none; ">
+            <input type="text" id="interestrate" class="rounded-rectangle " placeholder ="e.g. 1.99" style="font-family: 'Inter', sans-serif; font-size: 15px; color: #fff; padding-left: 20px; width: 150px; border: none; ">
             
             
         </div>
+
+        <button id="resultsButton">Get Results</button>
+
+
     </div>
 
     <div class="container2">
-        <div class="results-container">
+        <div class="results-container" id="resultsContainer">
 
-        </div>
+         </div>
 
 
 
@@ -62,5 +68,9 @@
 
 
     </div>
+    <script src="script.js"></script>
+    <script>document.getElementById('resultsButton').addEventListener('click', Carcalculate);
+    </script>
+
 </body>
 </html>
