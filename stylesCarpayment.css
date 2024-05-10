@@ -90,6 +90,27 @@ body{
 }
     
 
+#resultsContainer{
+  display: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: larger;
+  color: aliceblue;
+  
+  vertical-align: top; 
+  margin-top: -299px; 
+  margin-left: 1000px; 
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 5px;
+  
+  /*tranisition for resuylts*/
+  
+
+
+
+}
+
 
 
 

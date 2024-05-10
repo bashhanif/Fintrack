@@ -30,12 +30,17 @@ function Carcalculate() {
     var totalinterest = paymentamount * totalpayments - financedamount;
 
     
+
+    
     var resultsContainer = document.getElementById('resultsContainer');
+    resultsContainer.style.display = 'inline-block';
     resultsContainer.innerHTML = `
         <p>Financed amount: $${financedamount.toFixed(2)}</p>
         <p>Payment amount: $${paymentamount.toFixed(2)}</p>
         <p>Total interest: $${totalinterest.toFixed(2)}</p>
     `;
+
+    
 
 
 }
