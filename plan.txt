@@ -1,0 +1,39 @@
+1. fix title page 
+
+2.add calculation operations , get result button  (done 1/2)
+
+3.get result button - generate results based on inputs (done 1/2)
+
+4.results box , gives total based on inputs (0/2)
+
+5. fix results box today 
+
+
+
+
+
+
+vehicle amount so price of new car          
+
+
+down payment amount 
+
+
+duration of loan 
+
+frequency 
+
+interest rate 
+
+
+
+var financedamount = vehicleamount - down payment   will display in resutls 
+
+var paymentamount = display amount based on payment frequency 
+
+var totalinterest = display interest to be paid based on rate and frequency 
+
+
+
+
+7000 x 1.99 / 24   = 580.41
